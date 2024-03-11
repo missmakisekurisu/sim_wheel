@@ -3,9 +3,9 @@
 #include "stm32f10x.h"
 
 #define ENCODER_PORT                 GPIOB     
-#define ENCODER_PIN_A                GPIO_Pin_8 
-#define ENCODER_PIN_B                GPIO_Pin_9 
-#define ENCODER_PIN_Z                GPIO_Pin_5 
+#define ENCODER_PIN_A                GPIO_Pin_7 
+#define ENCODER_PIN_B                GPIO_Pin_8 
+#define ENCODER_PIN_Z                GPIO_Pin_9 
 #define ENCODER_PORT_CLK_SRC         RCC_APB2Periph_GPIOB
 #define ENCODER_PORT_APBxClock_FUN   RCC_APB2PeriphClockCmd
 

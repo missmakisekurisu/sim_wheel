@@ -16,14 +16,15 @@ void encoder_gpio_init(void){
 
     
 uint8_t encoder_read_position(void){
+    if(!ENCODER_READ_Z){currentRad = 0;}
     static uint8_t state = 0;
     static uint8_t lastState = 0;
 //    if(currentRad > ENCODER_RESOLUTION || currentRad <(-ENCODER_RESOLUTION)){
 //        currentRad = 0;
-//    }   
-    //A->B: 00-10-01-00
-    //B->A: 00-01-10-00
+//    }  
     
+    //A->B: 00-10-01-00
+    //B->A: 00-01-10-00    
     switch(state){
         case 0:{
             if(ENCODER_READ_A && ENCODER_READ_B && lastState != 0){
