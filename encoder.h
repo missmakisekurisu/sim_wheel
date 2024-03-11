@@ -13,6 +13,8 @@
 #define ENCODER_READ_B  GPIO_ReadInputDataBit(ENCODER_PORT, ENCODER_PIN_B)
 #define ENCODER_READ_Z  GPIO_ReadInputDataBit(ENCODER_PORT, ENCODER_PIN_Z )
 
+#define ENCODER_RESOLUTION  (19)
+
 void encoder_gpio_init(void);
 uint8_t encoder_read_position(void);
 
